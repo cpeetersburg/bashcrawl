@@ -77,6 +77,7 @@ Deduct 5 from your HP variable:
 let "HP=HP-5"
 
 EOF
+           perl -pe 's/\.\/statue/\.\/pieces/' -i ./pieces
            mv statue pieces
        else
            cat << EOF
